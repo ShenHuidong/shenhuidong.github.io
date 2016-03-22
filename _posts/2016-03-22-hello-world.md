@@ -14,10 +14,6 @@ end
 {% endhighlight %}
 
 
-{% gist 5555251 %}
-
-
-
 Api路径：Login/login
 
 请求方式：post
