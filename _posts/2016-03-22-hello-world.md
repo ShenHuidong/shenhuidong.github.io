@@ -35,7 +35,7 @@ Api路径：Login/login
 |addtion_data    |额外信息    |混编
 
 返回值示例：
-``` php
+``` ruby
 {
     "code": 1,
     "data": {
