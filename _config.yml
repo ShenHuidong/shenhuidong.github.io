@@ -1,8 +1,9 @@
 # Site settings
-baseurl: http://shenhuidong.github.io/
+baseurl: /
 url: http://shenhuidong.github.io
 paginate: 20
 title: Hshen's Blog
+description: Personal Blog
 email: shenhuidong@gmail.com
 language: zh-Hans
 
