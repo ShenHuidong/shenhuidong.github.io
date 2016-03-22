@@ -1,2 +1,12 @@
+# Site settings
 baseurl: http://shenhuidong.github.io
 paginate: 20
+title: Hshen's Blog
+email: shenhuidong@gmail.com
+language: zh-Hans
+
+swiftype_key: fLM9qfxyerC6njvM7usy
+
+markdown:         redcarpet
+redcarpet:
+    extensions:     [autolink, tables]

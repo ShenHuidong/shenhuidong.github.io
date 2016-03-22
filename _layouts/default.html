@@ -1,14 +1,39 @@
-<!DOCTYPE html>
-<html>
-　　<head>
-　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-　　　　<title>{{ page.title }}</title>
-       <link rel="stylesheet" href="/stylesheets/stylesheet.css?v=2016030903" type="text/css" />
-       <link rel="stylesheet" href="/stylesheets/github-light.css?v=2016030903" type="text/css" />
-　　</head>
-　　<body>
+<!doctype html>
+<html class="theme-next mist use-motion">
+    <head>
+        {% include 'head.html' %}
+        <title>{{ page.title }}</title>
+    </head>
 
-　　　　{{ content|markdownify }}
+    <body itemscope itemtype="http://schema.org/WebPage" lang="{{ site.language }}">
+        <div class="container one-column">
+            <div class="headband"></div>
+            
+            <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+                <div class="header-inner"> {% include 'header.html' %} </div>
+            </header>
+            
+            <main id="main" class="main">
+                <div class="main-inner">
+                    <div id="content" class="content"> {% block content %}{% endblock %} </div>
 
+                </div>
+            </main>
+            
+            <footer id="footer" class="footer">
+                <div class="footer-inner"> {% include 'footer.html' %} </div>
+            </footer>
+            
+            <div class="back-to-top"></div>
+        </div>
+        <script type="text/javascript" src="/js/lazyload.js"></script>
+        <script type="text/javascript">
+            $(function () {
+            $("#posts").find('img').lazyload({
+                placeholder: "/images/loading.gif",
+                effect: "fadeIn"
+            });
+            });
+        </script>
     </body>
-</html>
+</html>    
