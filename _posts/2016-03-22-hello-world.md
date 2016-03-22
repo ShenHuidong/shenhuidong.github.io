@@ -18,6 +18,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 返回值示例：
+
 ```
 {
     "code": 1,
