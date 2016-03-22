@@ -5,7 +5,11 @@ title: 你好，世界
 ###登录接口
 
 ##1.登录接口
-
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 Api路径：Login/login
 
 请求方式：post
