@@ -1,12 +1,37 @@
 # Site settings
 baseurl: http://shenhuidong.github.io
+url: http://shenhuidong.github.io
 paginate: 20
 title: Hshen's Blog
 email: shenhuidong@gmail.com
 language: zh-Hans
 
+
+author:
+  name: 'Shen Huidong'
+  email: shenhuidong@gmail.com
+  twitter_username: shenhuidong
+  facebook_username: shenhuidong
+  github_username:  shenhuidong
+  linkedin_username:  shenhuidong
+  
+  
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+        
 swiftype_key: fLM9qfxyerC6njvM7usy
 
-markdown:         redcarpet
-redcarpet:
-    extensions:     [autolink, tables]
+markdown:         kramdown
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']  
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
