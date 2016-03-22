@@ -1,6 +1,5 @@
 ---
 title: Blog on Github Pages
-date:   2016-03-22 21:04:23
 categories: [other]
 tags: [other]
 ---
