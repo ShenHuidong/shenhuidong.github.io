@@ -15,8 +15,6 @@ end
 {% gist 5555251 %}
 
 
-{% gist 5555251 result.md %}
-
 
 Api路径：Login/login
 
