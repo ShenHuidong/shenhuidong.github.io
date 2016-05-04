@@ -4,7 +4,8 @@ categories: [other]
 tags: [other]
 ---
 
-# nginx配置文件实例
+## 1.nginx配置文件实例
+编辑 vim /usr/local/nginx/conf/nginx.conf 文件直接用下面的替换
 
 ```conf
 user www www;
@@ -47,7 +48,7 @@ http {
 }
 ```                     
 
-# Nginx 配置文件详解
+## 2.Nginx 配置文件详解
 
 ```conf
 #运行用户
