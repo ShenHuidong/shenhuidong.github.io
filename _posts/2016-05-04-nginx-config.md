@@ -3,7 +3,8 @@ title: Nginx配置文件详解， 附一个nginx+php配置
 categories: [other]
 tags: [other]
 ---
-#nginx配置文件实例
+
+# nginx配置文件实例
 
 ```conf
 user www www;
@@ -43,7 +44,9 @@ http {
             include        fastcgi_params;
         }
     }
-}```
+}
+```                     
+
 # Nginx 配置文件详解
 
 ```conf
