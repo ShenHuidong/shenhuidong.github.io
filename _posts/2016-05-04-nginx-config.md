@@ -13,7 +13,7 @@ worker_processes 2;
 
 events {
 	use epoll;
-    worker_connections  65535;
+	worker_connections  65535;
 }
 http {
 	include mime.types;
@@ -21,8 +21,8 @@ http {
 	charset utf-8;
 	sendfile on;
 	keepalive_timeout  65;
-    tcp_nodelay        on;
-    gzip  on;
+	tcp_nodelay        on;
+	gzip  on;
 
     server {
     	listen 80;
@@ -35,18 +35,15 @@ http {
     	}
     	location ~ .+\.php($|/) {
             root           /mnt/www/xxx;#设定项目根目录
-            add_header Access-Control-Allow-Origin * ;
             fastcgi_pass   127.0.0.1:9000;
             fastcgi_index  index.php;
             fastcgi_split_path_info  ^(.+\.php)(/.*)$;
             fastcgi_param  PATH_INFO $fastcgi_path_info;
             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-            fastcgi_param HTTP_AUTHORIZATION $http_authorization;
             include        fastcgi_params;
         }
     }
-}
-```
+}```
 # Nginx 配置文件详解
 
 ```conf
