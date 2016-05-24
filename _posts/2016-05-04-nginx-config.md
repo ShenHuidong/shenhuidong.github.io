@@ -22,9 +22,13 @@ http {
 	default_type application/octet-stream;
 	charset utf-8;
 	sendfile on;
-	keepalive_timeout  65;
+    tcp_nopush on;
 	tcp_nodelay        on;
+    keepalive_timeout  60;
+    
 	gzip  on;
+    gzip_comp_level    6;
+
 
     server {
     	listen 80;
